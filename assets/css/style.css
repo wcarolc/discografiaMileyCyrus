@@ -130,3 +130,21 @@ section#discography {
 .item-disc .albumInfo span:last-child b {
   color: #dcc6e0;
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: auto;
+    padding: 2rem 0;
+  }
+  header h1#title {
+    font-size: 1.5rem;
+  }
+
+  .item-disc {
+    width: 90%;
+    margin: 0 auto 2rem;
+  }
+}
