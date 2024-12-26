@@ -8,7 +8,7 @@ Repositório criado para estudos para exibir a discografia completa da cantora M
 - **CSS**
 - **Javascript**
 
-<img src="#" alt="Captura de Tela - Discografia Miley Cyrus">
+<img src="assets/images/captura-discografia.png" alt="Captura de Tela - Discografia Miley Cyrus">
 
 ### Repositório Criado por
 

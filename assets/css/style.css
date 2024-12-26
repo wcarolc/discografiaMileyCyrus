@@ -57,36 +57,12 @@ header h1#title::after {
   transition: all 0.5s ease-in-out;
 }
 
-header:hover h1#title::after {
+body:hover h1#title::after {
   width: 100%;
 }
 
-header ul#menu {
-  margin-top: 2rem;
-  list-style-type: none;
-  text-decoration: none;
-  display: flex;
-  gap: 1rem;
-}
-
-header ul#menu li {
-  transition: background 0.5s;
-  background-color: #c9c9c9;
-  padding: 5px;
-  font-weight: 500;
-}
-
-header ul#menu li:hover {
-  background-color: #7fb3d5;
-}
-
-header ul#menu li a {
-  text-decoration: none;
-  color: #fff;
-}
-
 section#discography {
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -95,24 +71,32 @@ section#discography {
 }
 
 .item-disc {
-  width: 25%;
+  width: 23%;
+  min-height: 400px;
   display: flex;
-  margin-bottom: 2.5rem;
   align-items: center;
+  justify-items: flex-start;
   flex-direction: column;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
 }
 
 .item-disc .albumCover {
   position: relative;
-  width: 80%;
+  width: 95%;
   height: auto;
-  margin-left: 2.5rem;
+  margin-left: 3.6rem;
 }
 
 .item-disc .albumCover img {
   position: relative;
-  width: 90%;
-  height: auto;
+  width: 89.7%;
+  height: 100%;
+  transition: filter 0.5s ease-in-out;
+}
+
+.item-disc:hover .albumCover img {
+  filter: grayscale(1);
 }
 
 .item-disc .albumCover .jewel-overlay {
@@ -121,17 +105,28 @@ section#discography {
   height: auto;
   position: absolute;
   top: -5px;
-  left: -25px;
+  left: -30px;
+  z-index: 1;
 }
 
 .item-disc h3.albumTitle {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  margin: 1rem 0;
+  font-size: 1.2rem;
+  margin: 1rem 0 0;
 }
 
 .item-disc .albumInfo {
   display: flex;
   flex-direction: column;
-  font-size: 0.85rem;
+  align-items: center;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  color: #c9c9c9;
+}
+
+.item-disc .albumInfo span:last-child {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.item-disc .albumInfo span:last-child b {
+  color: #dcc6e0;
 }
