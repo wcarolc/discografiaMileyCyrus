@@ -12,7 +12,7 @@ fetch(
   {
     headers: {
       Authorization:
-        'Discogs key=fnmsMKHxIregIxrNSJfv,secret=fIoIsXnWqlwvqTihdCayHjJulWbfwGiJ',
+        'Discogs key=[key],secret=[secret]',
     },
   }
 )
